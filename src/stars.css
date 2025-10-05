@@ -1,0 +1,14 @@
+/* Starfield Background Animation */
+.stars-bg {
+  background: #000;
+  background-image: 
+    radial-gradient(2px 2px at 20% 20%, rgba(255,255,255,0.8), rgba(255,255,255,0) ),
+    radial-gradient(1px 1px at 80% 50%, rgba(255,255,255,0.6), rgba(255,255,255,0) ),
+    radial-gradient(2px 2px at 50% 80%, rgba(255,255,255,0.4), rgba(255,255,255,0) );
+  animation: starsMove 10s linear infinite;
+}
+
+@keyframes starsMove {
+  from { background-position: 0 0; }
+  to { background-position: -2000px 2000px; }
+}
